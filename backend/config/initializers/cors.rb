@@ -1,3 +1,5 @@
+require "rack/cors"
+
 allowed_origins = ENV
   .fetch("FRONTEND_URLS", "http://localhost:5173,http://localhost:5174")
   .split(",")
